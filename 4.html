@@ -1,0 +1,38 @@
+<h1>Guess the number challenge </h1>
+<input id="check"><br>
+
+<br>
+<button onclick="but()">check</button>
+<p id="res">You are right /wrong</p>
+<p id="score"> score=10 </p>
+
+<script>
+    var num=document.getElementById("check")
+    var result=document.getElementById("res")
+     var rand=Math.floor(Math.random()*10)+1
+     var score=document.getElementById("result")
+     var scores=10
+
+    function but()
+    {
+        var result=num.value
+   if(rand==result)
+   {
+    console.log("You are right")
+    res.textContent="right"
+    alert("you won")
+   
+   }
+   else
+   {
+    var a=scores-1
+    console.log("You are wrong")
+    res.textContent="wrong"
+    score.textContent="score"+a
+  
+
+
+   }
+  
+    }
+</script>
